@@ -53,44 +53,43 @@
 </head>
 <body>
 <div class="top-header">
-	<h3 class="name"><strong>Nina Carducci</strong></h3>
-	<div class="nav">   
-		<ul>
-			<li><a href="#about">À propos</a></li>
-			<li><a href="#gallery">Galerie</a></li>
-			<li><a href="#services">Service</a></li>
-			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank">
-				<img src="assets/images/instagram.webp" alt="Logo instagram" />
+	<h3 title="Nina Carducci photographe" class="name"><strong>Nina Carducci</strong></h3>
+	<div class="nav" aria-label="Liens de navigation" >   
+		<ul role="tree">
+			<li title="Lien à propos" role="treeitem"><a href="#about">À propos</a></li>
+			<li title="Vers la gallerie" role="treeitem"><a href="#gallery">Galerie</a></li>
+			<li title="Service" role="treeitem"><a href="#services">Service</a></li>
+			<li title="Contact" role="treeitem"><a href="#contact">Contact</a></li>
+			<li role="treeitem"><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank">
+				<img title="Logo instagram" src="assets/images/instagram.webp" alt="Logo instagram" />
 				</a>
 			</li>
 		</ul>
 	</div>
 </div>
 <div id="header">
-
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			<button title="Image 1" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			<button title="Image 2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			<button title="Image 3" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="./assets/images/slider/Photographe-ryoji-iwata.webp" class="d-block w-100" alt="Ryoji Iwata">
+				<img title="Ryoji Iwata" src="./assets/images/slider/Photographe-ryoji-iwata.webp" class="d-block w-100" alt="Ryoji Iwata">
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/Photographe-nicholas-green.webp" class="d-block w-100" alt="Nicholas Green">
+				<img title="Nicholas Green" src="./assets/images/slider/Photographe-nicholas-green.webp" class="d-block w-100" alt="Nicholas Green">
 			</div>
-			<div class="carousel-item">
+			<div title="Edward Cisneros" class="carousel-item">
 				<img src="./assets/images/slider/Photographe-edward-cisneros.webp" class="d-block w-100" alt="Edward Cisneros">
 			</div>
 		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		<button title="Image précédente" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			<span class="visually-hidden">Previous</span>
 		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		<button title="Image suivante" class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
 			<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			<span class="visually-hidden">Next</span>
 		</button>
@@ -98,9 +97,9 @@
 </div>
 <div id="about">
 	<div class="picture left">
-		<img src="./assets/images/Photographe-nina.webp" alt="Nina">
+		<img title="Photo portrait de Nina" src="./assets/images/Photographe-nina.webp" alt="Nina">
 	</div>
-	<div id="about-me">
+	<div title="Section A propos de moi" id="about-me">
 		<h3 class="about-me__title">A propos de moi</h3>
 		<h6 class="about-me__introduction">Devenir <strong>photographe</strong> était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h6>
 		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
@@ -111,6 +110,7 @@
 	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
+		<!--<div class="gallery">-->
 			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/Chanteur-aaron-paul.webp" alt="Aaron Paul"/>
 			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/Entrepreneur-ali-morshedlou.webp" alt="Ali Morshedlou"/>
 			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/Entrepreneur-jason-goodman.webp" alt="Jason Goodman"/>
@@ -131,10 +131,11 @@
 		</figure>
 	</div>
 </div>
+
 <div id="services">
 	<h3 class="title">Mes services</h3>
 	<div class="container">
-		<div class="service">
+		<div title="Service" class="service">
 			<div class="service__description">
 				<h3>Shooting photo</h3>
 				<p>Pour capturer vos moments les plus précieux et garder un <strong>souvenir</strong> impérissable. Je me déplace en Île-de-France pour réaliser vos <strong>photos</strong></p>
@@ -177,7 +178,7 @@
 </div>
 <div id="contact">
 	<div class="container">
-		<div class="form-container">
+		<div title="Formulaire de contact" class="form-container">
 			<h3>Une question ? Une demande de devis ?</h3>
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 			<p> <strong>Nina Carducci</strong> photographe</p>
@@ -191,7 +192,7 @@
 				<input type="email" name="email" id="email">
 				<label>Message</label>
 				<textarea name="message" id="message" cols="30" rows="10"></textarea>
-				<input type="submit" value="Envoyer"/>
+				<input type="submit" name="Envoyer" value="Envoyer"/>
 			</form>
 		</div>
 		<div class="picture right">
